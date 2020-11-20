@@ -1,0 +1,40 @@
+{
+  "name": "olaf-design-system",
+  "version": "0.0.1-alpha",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/appear/olaf-design-system.git"
+  },
+  "keywords": [],
+  "author": "olaf",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/appear/olaf-design-system/issues"
+  },
+  "homepage": "https://github.com/appear/olaf-design-system#readme",
+  "devDependencies": {
+    "@babel/core": "^7.12.3",
+    "@storybook/addon-actions": "^6.1.1",
+    "@storybook/addon-essentials": "^6.1.1",
+    "@storybook/addon-links": "^6.1.1",
+    "@storybook/react": "^6.1.1",
+    "babel-loader": "^8.2.1",
+    "csstype": "^3.0.5",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "typescript": "^4.1.2"
+  },
+  "peerDependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "dependencies": {
+    "styled-components": "^5.2.1"
+  }
+}
