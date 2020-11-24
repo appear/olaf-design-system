@@ -1,4 +1,5 @@
-import CSS from "csstype";
+
+import CSS from "csstype"
 
 export type Overflow = {
   overflow?: CSS.Property.Overflow;

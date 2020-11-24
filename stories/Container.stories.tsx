@@ -7,4 +7,4 @@ export default {
   component: Container,
 };
 
-export const BaseContainer = () => <Container>Hello</Container>;
+export const BaseContainer = () => <Container width={{lg: '200'}}>Hello</Container>;
