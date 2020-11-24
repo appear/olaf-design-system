@@ -1,6 +1,6 @@
 import React from "react";
 
-import Container from "../components/core/container";
+import Container from "../core/container";
 
 export default {
   title: "Core/Container",
