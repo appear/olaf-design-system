@@ -1,20 +1,21 @@
 import { css } from 'styled-components'
 import { size, SIZE } from '../theme/size'
+import addUnit from '../utils/add-unit'
 
 export type MediaProps = {
     [key in SIZE]?: string | number
 } 
 
-function media(props: MediaProps) {
+function media(tag: string, values: MediaProps) {
     return css`
         @media (max-width: ${size.sm}) {
-            ${props.sm ? `width: ${props.sm}px;` : ''}
+            ${values.sm ? `${tag}: ${addUnit(values.sm)};` : ''}
         }
         @media (max-width: ${size.md}) {
-            ${props.md ? `width: ${props.md}px;` : ''}
+            ${values.md ? `${tag}: ${addUnit(values.md)};` : ''}
         }
         @media (max-width: ${size.lg}) {
-            ${props.lg ? `width: ${props.lg}px;` : ''}
+            ${values.lg ? `${tag}: ${addUnit(values.lg)};` : ''}
         }
     `
 }
