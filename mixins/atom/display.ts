@@ -1,9 +1,9 @@
-import CSS from "csstype";
+import CSS from 'csstype'
 
-export type Display = {display?: CSS.Property.Display};
+export type Display = { display?: CSS.Property.Display }
 
 const display = `
   ${({ display }: Display) => display && `display: ${display}`};
-`;
+`
 
-export default display;
+export default display

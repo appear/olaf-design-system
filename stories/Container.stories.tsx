@@ -1,10 +1,12 @@
-import React from "react";
+import React from 'react'
 
-import Container from "../core/container";
+import Container from '../core/container'
 
 export default {
-  title: "Core/Container",
+  title: 'Core/Container',
   component: Container,
-};
+}
 
-export const BaseContainer = () => <Container width={{lg: 200}}>Hello</Container>;
+export const BaseContainer = () => (
+  <Container width={{ lg: 200 }}>Hello</Container>
+)
