@@ -1,3 +1,6 @@
 {
-    "extends": "eslint-config-olaf/typescript"
+    "extends": "eslint-config-olaf/typescript",
+    "rules": {
+        "@typescript-eslint/explicit-function-return-type": "off"
+    }
 }
