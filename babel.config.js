@@ -1,4 +1,8 @@
-module.exports = () => {
+module.exports = (api) => {
+  /**
+   * @show https://babeljs.io/docs/en/config-files#apicache
+   */
+  api.cache(true)
   const presets = [
     '@babel/preset-react',
     [
