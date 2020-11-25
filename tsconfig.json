@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "ES2017",
+    "strict": true,
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "esModuleInterop": true,
+    "types": ["jest", "react"],
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "$utils/*": ["utils/*"],
+      "$theme/*": ["theme/*"],
+      "$mixins/*": ["mixins/*"],
+      "$core/*": ["core/*"]
+    }
+  },
+  "exclude": ["node_modules"],
+  "include": ["types/*.d.ts", "**/*.ts", "**/*.tsx"]
+}

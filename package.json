@@ -8,6 +8,8 @@
     "build-storybook": "build-storybook",
     "lint": "eslint '**/*.{ts,tsx}'",
     "lint:fix": "npm run lint -- --fix",
+    "prettier": "prettier '**/*.{md,json}'",
+    "prettier:fix": "prettier '**/*.{md,json}' --write",
     "test": "jest"
   },
   "repository": {
@@ -41,6 +43,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "styled-components": "^5.2.1",
+    "tsconfig-paths-webpack-plugin": "^3.3.0",
     "typescript": "^4.1.2"
   },
   "peerDependencies": {
