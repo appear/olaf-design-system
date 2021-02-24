@@ -2,7 +2,7 @@
   "name": "olaf-design-system",
   "version": "0.0.1-alpha",
   "description": "",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
@@ -10,7 +10,10 @@
     "lint:fix": "npm run lint -- --fix",
     "prettier": "prettier '**/*.{md,json}'",
     "prettier:fix": "prettier '**/*.{md,json}' --write",
-    "test": "jest"
+    "test": "jest",
+    "build": "npm run build-resources && npm run build-declarations",
+    "build-resources": "BABEL_ENV=build babel --root-mode upward src --out-dir lib --source-maps --extensions .ts,.tsx,.js --delete-dir-on-start --no-comments",
+    "build-declarations": "tsc"
   },
   "repository": {
     "type": "git",

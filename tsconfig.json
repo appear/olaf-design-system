@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "module": "commonjs",
+    "outDir": "lib",
     "moduleResolution": "node",
     "target": "ES2017",
     "strict": true,
@@ -12,13 +13,14 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
+    "declaration": true,
     "jsx": "react",
     "baseUrl": ".",
     "paths": {
-      "$utils/*": ["utils/*"],
-      "$theme/*": ["theme/*"],
-      "$mixins/*": ["mixins/*"],
-      "$core/*": ["core/*"]
+      "$utils/*": ["src/utils/*"],
+      "$theme/*": ["src/theme/*"],
+      "$mixins/*": ["src/mixins/*"],
+      "$core/*": ["src/core/*"]
     }
   },
   "exclude": ["node_modules"],
